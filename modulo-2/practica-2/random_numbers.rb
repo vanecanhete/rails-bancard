@@ -1,6 +1,5 @@
-
 # Seleccionar 23 elementos aleatorios entre 0 y 10.000
-arr = (1..10000).to_a.sample(23)
+arr = (5001..10000).to_a.sample(23)
 puts "Selección de 23 números aleatorios..."
 p arr
 
@@ -13,4 +12,4 @@ p arr.select { |element| element % 3 == 0 }
 #y utilzar 'sort' y 'reverse' para ordenar de forma descendente
 #Implementar todo esto en una sola linea de código
 puts "Resultado final: "
-#p arr.select { |element| element % 3 == 0 }
+p arr.select { |element| element % 3 == 0 }.sort.reverse
