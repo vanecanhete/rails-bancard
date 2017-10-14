@@ -4,7 +4,7 @@ require 'rspec/its'
 describe "lesson1" do
 
   context "check results" do
-    result=`ruby case_work.rb`.chomp!
+    result='Case.rb'.chomp!
 
     it "Salida inesperada" do
       expect(result).to eq("Nada se ejecutó? Por que?")
@@ -12,7 +12,7 @@ describe "lesson1" do
   end
 
   context "Verificación de implementación" do
-    srcCode = File.open("case_work.rb", "r").read
+    srcCode = File.open("Case.rb", "r").read
 
     it "Eliminar sentencia if" do
       expect(srcCode).not_to include("if")
