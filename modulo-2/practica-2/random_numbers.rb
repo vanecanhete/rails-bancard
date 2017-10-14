@@ -14,3 +14,4 @@ p arr.select { |element| element % 3 == 0 }
 #Implementar todo esto en una sola linea de código
 puts "Resultado final: "
 #p arr.select { |element| element % 3 == 0 }
+p arr.select { |element| element % 3 == 0 }.reject{ |elemento| elemento < 5000}.sort.reverse
