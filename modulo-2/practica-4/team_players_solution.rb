@@ -23,6 +23,7 @@ class Team
   def initialize (name)
     @name = name
     @required_level = 4.5
+    @players = []
   end
 
   def add_players (*players)
