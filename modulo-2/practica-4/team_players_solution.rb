@@ -1,8 +1,5 @@
 class Player
-  attr_reader :name
-  attr_reader :age
-  attr_reader :skill_level
-
+  attr_reader :name, :age, :skill_level
   @required_level
 
   def initialize (name, age, skill_level)
@@ -30,7 +27,7 @@ class Team
 
   def add_players (*players)
 
-    @players = players
+    @players += players
     #@players = players.select {|player|player.skill_level >= @required_level}
 
     #puts "clase de splats pasado: " + players.class.to_s     #players se recibe como Array, pero cada elemento es del tipo Player
