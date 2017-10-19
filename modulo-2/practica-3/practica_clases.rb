@@ -21,6 +21,7 @@ dp1 = Persona.new("Juan", "Perez")
 p2 = Persona.new("Juan", "Benitez")
 p3 = Persona.new("Juana", "Perez")
 p4 = Persona.new("Romina", "Benitez")
+p5 = Persona.new("Paola", "Figueredo")
 
 puts Persona.search("Perez")
 
